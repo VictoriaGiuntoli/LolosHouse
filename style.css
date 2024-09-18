@@ -50,7 +50,9 @@ a:visited {
 
 .HomeHeader {    
    background-color: #555;
-    background-repeat: repeat;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     position: sticky;
@@ -64,6 +66,10 @@ a:visited {
 .HomeP {
     color: bisque
 } 
+
+nav{
+    position:sticky;
+}
 
 .headerul{
     color: rgb(255, 240, 243);
