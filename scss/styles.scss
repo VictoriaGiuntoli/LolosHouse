@@ -1,0 +1,234 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .containerFlexHeader, .Alineados {
+        padding: 20px;
+    }
+
+    .headerul {
+        justify-content: space-around;
+    } 
+}
+
+@media only screen and (max-width: 500px) {
+    .body {
+        background-color: red; 
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .body {
+        background-color: yellow;
+    }
+}
+
+$colorprimario: #555;
+$colorsecundario: #f8f9fa;
+$link-color: orange;
+$link-active-color: yellow;
+$link-visited-color: pink;
+$header-color: bisque;
+$smooth-scroll: smooth;
+
+@font-face {
+    font-family: FuenteMontserrat;
+    src: url(./Montserrat-Light.ttf);
+}
+
+* {
+    font-family: FuenteMontserrat;
+    scroll-behavior: $smooth-scroll;
+    cursor: pointer;
+    background-color: $colorprimario;
+
+}
+
+h1 {
+    border: 15px solid $colorsecundario;
+}
+
+a {
+    &::link {
+        color: $link-color;
+        font-size: 8rem;
+    }
+
+    &::active {
+        color: $link-active-color;
+        font-size: 5rem;
+    }
+
+    &::visited {
+        color: $link-visited-color;
+        font-size: 10rem;
+    }
+}
+
+body {
+    background-color: $colorprimario;
+  }
+
+.HomeHeader {
+    background-color: $colorprimario; 
+    height: auto; 
+    position: relative;
+
+    .carousel {
+        height: 100%;
+
+        .carousel-inner {
+            height: 100%;
+
+            .carousel-item {
+                height: 100%;
+
+                img {
+                    object-fit: cover; 
+                    height: 100%;
+                }
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(1);
+        }
+    }
+}
+
+.HomeTitulo,
+.HomeP {
+    color: $header-color;
+}
+
+nav {
+    position: sticky;
+}
+
+.headerul {
+    color: rgb(255, 240, 243);
+    border: 1px solid white;
+    display: flex;
+    margin: 0;
+}
+
+.headerli {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.containerFlexHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.mainFondo {
+    background-color: #355c7d;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contendedorGeneralfotosLolo1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 120px;
+    width: 33%;
+}
+
+.contendedorGeneralfotosLolo2 {
+    width: 70%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    div {
+        border: 1px solid black;
+    }
+
+    .oktoallitas {
+        grid-column: 5 / 6;
+    }
+
+    .dos {
+        grid-column: 2 / span 3;
+        background-image: url(./Images/lolobebe.jpg);
+    }
+}
+
+.homefooterFondo {
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    background-color: $colorsecundario;
+    padding: 2rem 0;
+
+    a {
+        color: #212529;
+        text-decoration: none;
+        font-size: medium;
+
+        &:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+    }
+}
+
+.social-icons {
+    a {
+        color: #212529;
+        margin: 0 10px;
+
+        &:hover {
+            color: #0056b3;
+        }
+    }
+}
+
+.Alineados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 10rem;
+    padding: 15px;
+
+}
+
+.descuento {
+    text-decoration: line-through;
+}
+
+.ServiciosTabladePrecios {
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-signin {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+
+body {
+    background-color: yellow;
+}
